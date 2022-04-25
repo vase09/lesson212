@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск по скиллу</title>
+</head>
+<body>
+   <h1>Найдено со скиллом : {{ candidates_count }}/h2>
+       {% for candidate in candidates %}
+   <p><a href="/candidate/{{candidates.id}}">{{candidate.name}}</a></p>
+       {% endfor %}
+
+</body>
+</html>
