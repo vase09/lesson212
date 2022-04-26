@@ -5,10 +5,9 @@
     <title>Поиск кандидатов по имени</title>
 </head>
 <body>
-<h1>найдено кандидатов : {{ candidates_count }}</h2>
+<h1>найдено кандидатов : {{ candidates_count }}</h1>
     {% for candidate in candidates %}
     <p><a href="/candidate/{{candidate.id}}">{{candidate.name}}</a></p>
     {% endfor %}
-
 </body>
 </html>

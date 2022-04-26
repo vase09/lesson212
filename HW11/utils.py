@@ -11,7 +11,7 @@ def get_candidate(candidate_id):  # возвращает одного канди
     for candidate in candidates:
         if candidate['id'] == candidate_id:
             return candidate
-    return None
+
 
 
 def get_candidates_by_name(candidate_name):  # возвращает кандидатов по имени
