@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request
 import logging
 from main.utils import *
-from app import POST_PATH
+from config import POST_PATH
 
 main_blueprint = Blueprint("main_blueprint", __name__, template_folder="templates")
 

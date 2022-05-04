@@ -1,9 +1,8 @@
 from flask import Blueprint, render_template, request
 import logging
 from main import utils
-from app import POST_PATH, UPLOAD_FOLDER
 import json
-
+from config import POST_PATH, UPLOAD_FOLDER
 
 loader_blueprint = Blueprint("loader_blueprint", __name__, template_folder="templates")
 logging.basicConfig(filename="logger.log", level=logging.INFO)
