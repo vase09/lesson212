@@ -25,6 +25,6 @@ def create_new_post_by_user():
     picture.save(picture_path)
     new_post = {"pic": picture_path, "content": content}
     posts.append(new_post)
-    with open(POST_PATH, "n", encoding='utf-8') as file:
+    with open(POST_PATH, "r", encoding='utf-8') as file:
         json.dump(posts, file)
     return render_template("post_uploaded.html", new_post=new_post)
