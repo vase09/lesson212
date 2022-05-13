@@ -1,0 +1,380 @@
+Index: ../pythonProject7/chapter2.html
+===================================================================
+diff --git a/../pythonProject7/chapter2.html b/../pythonProject7/chapter2.html
+deleted file mode 100644
+--- a/../pythonProject7/chapter2.html	(revision d7f9e0ce06a691ac1f3bb111b6d8ef3ec7c3c23a)
++++ /dev/null	(revision d7f9e0ce06a691ac1f3bb111b6d8ef3ec7c3c23a)
+@@ -1,8 +0,0 @@
+-Глава 2
+-
+-Однажды сова и собачка подружились — дело было так ...
+-В один прекрасный день, в одной прекрасной квартире, 
+-встретились две подруги.
+-Сова, как обычно, сидела на своей любимой ветке.
+-А собачка по утрам всегда выходила на улицу, 
+-чтобы прогуляться и подышать свежим воздухом.
+\ No newline at end of file
+Index: ../pythonProject7/chapter12.html
+===================================================================
+diff --git a/../pythonProject7/chapter12.html b/../pythonProject7/chapter12.html
+deleted file mode 100644
+--- a/../pythonProject7/chapter12.html	(revision d7f9e0ce06a691ac1f3bb111b6d8ef3ec7c3c23a)
++++ /dev/null	(revision d7f9e0ce06a691ac1f3bb111b6d8ef3ec7c3c23a)
+@@ -1,6 +0,0 @@
+-Глава 1
+-
+-Жила на окраине леса маленькая собачка. Она была очень умна.
+-Каждое утро она отправлялась на прогулку.
+-Она уходила с утра до вечера, возвращалась домой
+-и ложилась спать.
+Index: HW11-1.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/HW11-1.html b/HW11-1.html
+new file mode 100644
+--- /dev/null	(date 1650886804267)
++++ b/HW11-1.html	(date 1650886804267)
+@@ -0,0 +1,22 @@
++<!DOCTYPE html>
++<html lang="ru">
++<head>
++    <meta charset="UTF-8">
++    <title>HomeWork</title>
++</head>
++<body>
++<h1> Кот Котовский </h1>
++</body>
++<body>
++<h3>
++    <img src="https://downloader.disk.yandex.ru/preview/5ccaceb91ad5b801f6f1e8db7864af2c4614e3c687ed4a57a64e3ea04f16cc71/6266c059/NGfNsdpWTCbTnaknwcK1vOpnJn9At7AnmGzivr334gwqFDDzi07WF8J4GPzbZ6p65azFmjmWwF-8er9SU4TAqg%3D%3D?uid=0&filename=IMG_3349.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=1920x942" width="500" height="300" alt="Эту картинку кто-то украл"><br>
++<ul>
++    Привет, <a href="/https://ru.wikipedia.org/wiki/Персидская_кошка"> я персидский наглый кот и это моя страница!!!</a><br>
++    <em>Я кот и кошмарю своих людишек!!!</em><br>
++    <strong>Они дают мне мягкий корм....</strong><br>
++    <del>Иногда изображаю дурашку и бегаю ночами.</del><br>
++    <ins>Но я их достаю потому-что</ins>, <mark>люблю своих рабов.</mark><br>
++</ul>
++</h3>
++</body>
++</html>
+\ No newline at end of file
+Index: ../pythonProject/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pythonProject/.idea/misc.xml b/../pythonProject/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1650531421861)
++++ b/../pythonProject/.idea/misc.xml	(date 1650531421861)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (pythonProject)" project-jdk-type="Python SDK" />
++  <component name="PyCharmProfessionalAdvertiser">
++    <option name="shown" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../pythonProject/.idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml b/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1650530324224)
++++ b/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml	(date 1650530324224)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: ../hw10/123.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../hw10/123.py b/../hw10/123.py
+new file mode 100644
+--- /dev/null	(date 1650464506118)
++++ b/../hw10/123.py	(date 1650464506118)
+@@ -0,0 +1,18 @@
++from flask import Flask, request, render_template
++
++
++app = Flask(__name__)
++
++
++@app.route('/',)
++def page_index():
++
++    page_content = """ 
++    <h1>Смотри, это — моя страничка</h1>
++    <p>Страничек много, но эта – моя!</p>
++    <p>Фронтенд – мой лучший друг!</p>
++    """
++    return page_content
++
++
++app.run()
+\ No newline at end of file
+Index: ../.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/vcs.xml b/../.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1649687611293)
++++ b/../.idea/vcs.xml	(date 1649687611293)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/misc.xml b/../.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1650206625695)
++++ b/../.idea/misc.xml	(date 1650206625695)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10" project-jdk-type="Python SDK" />
++  <component name="PyCharmProfessionalAdvertiser">
++    <option name="shown" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/.gitignore b/../.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1649094486398)
++++ b/../.idea/.gitignore	(date 1649094486398)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/modules.xml b/../.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1650200748810)
++++ b/../.idea/modules.xml	(date 1650200748810)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/.idea/PycharmProjects.iml" />
++      <module fileurl="file://$PROJECT_DIR$/hw10/.idea/hw10.iml" filepath="$PROJECT_DIR$/hw10/.idea/hw10.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../hw10/.idea/hw10.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../hw10/.idea/hw10.iml b/../hw10/.idea/hw10.iml
+new file mode 100644
+--- /dev/null	(date 1650206625612)
++++ b/../hw10/.idea/hw10.iml	(date 1650206625612)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.10" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../.idea/codestream.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/codestream.xml b/../.idea/codestream.xml
+new file mode 100644
+--- /dev/null	(date 1650464397293)
++++ b/../.idea/codestream.xml	(date 1650464397293)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CodeStream">
++    <option name="webViewContext" value="{&quot;chatProviderAccess&quot;:&quot;strict&quot;,&quot;currentTeamId&quot;:&quot;&quot;,&quot;currentStreamId&quot;:&quot;&quot;,&quot;pullRequestCheckoutBranch&quot;:false,&quot;isRepositioning&quot;:false,&quot;onboardStep&quot;:0,&quot;panelStack&quot;:[&quot;landing-redirect&quot;],&quot;hasFocus&quot;:false,&quot;channelFilter&quot;:&quot;all&quot;,&quot;channelsMuteAll&quot;:false,&quot;codemarkFileFilter&quot;:&quot;all&quot;,&quot;codemarkTypeFilter&quot;:&quot;all&quot;,&quot;codemarkTagFilter&quot;:&quot;all&quot;,&quot;codemarkBranchFilter&quot;:&quot;all&quot;,&quot;codemarkAuthorFilter&quot;:&quot;all&quot;,&quot;codemarksFileViewStyle&quot;:&quot;inline&quot;,&quot;codemarksShowArchived&quot;:false,&quot;codemarksShowResolved&quot;:false,&quot;codemarksWrapComments&quot;:false,&quot;showFeedbackSmiley&quot;:true,&quot;route&quot;:{&quot;name&quot;:&quot;newUserEntry&quot;,&quot;params&quot;:{}},&quot;spatialViewShowPRComments&quot;:false,&quot;__teamless__&quot;:{&quot;selectedRegion&quot;:&quot;us&quot;},&quot;sessionStart&quot;:1650464351992}" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../hw10/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../hw10/.idea/modules.xml b/../hw10/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1650200707603)
++++ b/../hw10/.idea/modules.xml	(date 1650200707603)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/hw10.iml" filepath="$PROJECT_DIR$/.idea/hw10.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/PycharmProjects.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/PycharmProjects.iml b/../.idea/PycharmProjects.iml
+new file mode 100644
+--- /dev/null	(date 1650206431888)
++++ b/../.idea/PycharmProjects.iml	(date 1650206431888)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/pythonProject7/venv" />
++      <excludeFolder url="file://$MODULE_DIR$/hw10/venv" />
++    </content>
++    <orderEntry type="jdk" jdkName="Python 3.10 (venv)" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="module" module-name="hw10" />
++  </component>
++  <component name="PyDocumentationSettings">
++    <option name="format" value="PLAIN" />
++    <option name="myDocStringFormat" value="Plain" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../pythonProject/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pythonProject/.idea/vcs.xml b/../pythonProject/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1650530324134)
++++ b/../pythonProject/.idea/vcs.xml	(date 1650530324134)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../pythonProject/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pythonProject/.idea/.gitignore b/../pythonProject/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1650530324860)
++++ b/../pythonProject/.idea/.gitignore	(date 1650530324860)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../pythonProject/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pythonProject/.idea/modules.xml b/../pythonProject/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1650530324059)
++++ b/../pythonProject/.idea/modules.xml	(date 1650530324059)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/pythonProject.iml" filepath="$PROJECT_DIR$/.idea/pythonProject.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../pythonProject/.idea/pythonProject.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../pythonProject/.idea/pythonProject.iml b/../pythonProject/.idea/pythonProject.iml
+new file mode 100644
+--- /dev/null	(date 1650530324017)
++++ b/../pythonProject/.idea/pythonProject.iml	(date 1650530324017)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/venv" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../.idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/inspectionProfiles/profiles_settings.xml b/../.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1649094485707)
++++ b/../.idea/inspectionProfiles/profiles_settings.xml	(date 1649094485707)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: ../hw10/.idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../hw10/.idea/inspectionProfiles/profiles_settings.xml b/../hw10/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1650200707747)
++++ b/../hw10/.idea/inspectionProfiles/profiles_settings.xml	(date 1650200707747)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
