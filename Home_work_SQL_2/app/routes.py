@@ -1,4 +1,4 @@
-import requests
+from flask import request
 from app import models, db
 
 from flask import current_app as app, jsonify, abort
@@ -51,9 +51,9 @@ def get_offers():
 
 
 @app.route('/offers/<int:order_id>', methods=['GET'])
-def get_offer(offer_id):
+def get_offer(order_id):
     """ Возвращает предложения по ID """
-    offer = db.session.query(models.Offer).filter(models.Offer.id == offer_id).first()
+    offer = db.session.query(models.Offer).filter(models.Offer.id == order_id).first()
 
     if offer is None:
         abort(404)
@@ -63,7 +63,7 @@ def get_offer(offer_id):
 
 @app.route('/users', methods=['POST'])
 def create_user():
-    data = requests.json
+    data = request.json
 
     db.session.add(models.User(**data))
 
@@ -73,7 +73,7 @@ def create_user():
 
 @app.route('/users/<int:user_id>', methods=['PUT'])
 def edit_user(user_id):
-    data = requests.json
+    data = request.json
 
     user = db.session.query(models.User).filter(models.User == user_id).first()
     if user is None:

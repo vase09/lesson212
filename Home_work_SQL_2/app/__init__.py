@@ -23,5 +23,4 @@ def create_app():
         migrate.migrate_orders(app.config['ORDERS_FIXTURE_PATH'])
         migrate.migrate_offers(app.config['OFFERS_FIXTURE_PATH'])
 
-
         return app

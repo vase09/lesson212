@@ -1,10 +1,9 @@
 import json
 import os
-
-from app import db, models
+import re
 from datetime import datetime
 
-import re
+from app import db, models
 
 DATE_PATTERN = re.compile(r'\d{2}/\d{2}/\d{4}')
 
@@ -28,13 +27,14 @@ def migration(fixture_path, model, convert_dates=False):
     # конвертация дат из формата
 
     for fixture in fixture_content:
+
         if convert_dates:
             for field_name, field_value in fixture.items():
                 if isinstance(field_value, str) and field_value.count('/') == 2:
                     fixture[field_name] = datetime.strptime(field_value, '%m/%d/%Y')
 
-            if db.session.query(models.Order).filter(model.Order.id == fixture['id']).first() is None:
-                db.session.add(model.Order(**fixture))
+        if db.session.query(model).filter(model.id == fixture['id']).first() is None:
+            db.session.add(model(**fixture))
 
     db.session.commit()
 
@@ -49,7 +49,7 @@ def migrate_user_roles(fixture_path):
 def migrate_users(fixture_path):
     migration(
         fixture_path=fixture_path,
-        model=models.User
+        model=models.User,
     )
 
 
@@ -59,6 +59,7 @@ def migrate_orders(fixture_path):
         model=models.Order,
         convert_dates=True,
     )
+
 
 def migrate_offers(fixture_path):
     migration(

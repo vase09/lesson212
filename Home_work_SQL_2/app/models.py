@@ -4,6 +4,7 @@ from sqlalchemy.orm import relationship
 
 from datetime import datetime
 
+
 class UserRole(db.Model):
     __tablename__ = 'user_roles'
 
@@ -19,7 +20,7 @@ class User(db.Model):
     last_name = db.Column(db.String(255), nullable=False)
     age = db.Column(db.Integer)
     email = db.Column(db.String(255), unique=True)
-    rale_id = db.Column(db.Integer, db.ForeignKey('user_roles.id'))
+    role_id = db.Column(db.Integer, db.ForeignKey('user_roles.id'))
     phone = db.Column(db.String(16), unique=True)
 
     role = relationship('UserRole')
@@ -52,6 +53,7 @@ class Offer(db.Model):
             'order_id': self.order_id,
             'executor_id': self.executor_id,
         }
+
 
 class Order(db.Model):
     __tablename__ = 'orders'
