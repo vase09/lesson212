@@ -1,5 +1,7 @@
 import os
+
 from flask import Flask, request, abort
+
 import utils
 from constants import DATA_DIR, COMMANDS
 
